@@ -13,7 +13,7 @@ namespace MonoTouch.Appirater.Demo
 			Root = new RootElement ("Appirater Demo") {
 				new Section("") {
 					new StyledStringElement("Raise Significant Event", new NSAction(() => {
-						global::MonoTouch.Appirater.Appirater.UserDidSignificantEvent(true);
+						Appirater.UserDidSignificantEvent(true);
 					})),
 					new StyledStringElement("Show Prompt", new NSAction(() => {
 						Appirater.ShowPrompt();

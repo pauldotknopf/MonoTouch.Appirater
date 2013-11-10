@@ -20,6 +20,14 @@ namespace MonoTouch.Appirater.Demo
 			window.RootViewController = new TestController ();
 			window.MakeKeyAndVisible ();
 
+			// clear the "kAppiraterRatedCurrentVersion" so we can demo it easier
+			NSUserDefaults.StandardUserDefaults.SetBool (false, Appirater.RatedCurrentVersion);
+
+			Appirater.SetAppId ("333903271");
+			Appirater.SetSignificantEventsUntilPrompt (2);
+			Appirater.SetDaysUntilPrompt (2);
+			Appirater.SetUsesUntilPrompt (2);
+			Appirater.SetTimeBeforeReminding (2);
 			Appirater.AppLaunched (true);
 
 			return true;
