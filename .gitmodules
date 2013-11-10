@@ -1,0 +1,3 @@
+[submodule "SubModules/Appirater-Universal"]
+	path = SubModules/Appirater-Universal
+	url = https://github.com/theonlylawislove/Appirater-Universal.git
